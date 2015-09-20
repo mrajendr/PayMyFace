@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.mrajendram.paymyface.RegisterActivity">
+
+    <TextView android:text="Registration" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/register_title"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Personal Information:"
+        android:id="@+id/PersonalInfoView"
+        android:layout_marginTop="50dp"
+        />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editFirst"
+        android:ems="10"
+        android:layout_marginTop="40dp"
+        android:hint="Enter First Name"
+        android:layout_below="@+id/register_title"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/editLast"
+        android:hint="Enter Last Name"
+        android:layout_below="@+id/editFirst"
+        android:layout_alignLeft="@+id/editFirst"
+        android:layout_alignStart="@+id/editFirst" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editEmail"
+        android:ems="10"
+        android:hint="Enter Email"
+        android:focusableInTouchMode="true"
+        android:layout_below="@+id/editPass"
+        android:layout_alignLeft="@+id/editPass"
+        android:layout_alignStart="@+id/editPass" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editPass"
+        android:hint="Enter Password"
+        android:layout_below="@+id/editLast"
+        android:layout_alignLeft="@+id/editLast"
+        android:layout_alignStart="@+id/editLast" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Credit Card Information:"
+        android:id="@+id/CardInfoView"
+        android:layout_marginTop="250dp"
+        />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/editCard"
+        android:hint="Credit Card Number"
+        android:layout_marginTop="270dp"
+        android:layout_alignLeft="@+id/editFirst"
+        android:layout_alignStart="@+id/editFirst" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editExp"
+        android:ems="10"
+        android:hint="Expiry Date"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="310dp"
+        android:layout_alignLeft="@+id/editPass"
+        android:layout_alignStart="@+id/editPass" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editCvc"
+        android:hint="Enter CVC"
+        android:layout_marginTop="350dp"
+        android:layout_alignLeft="@+id/editLast"
+        android:layout_alignStart="@+id/editLast" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Upload image"
+        android:id="@+id/camera_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="390dp"
+        android:onClick="segueToPicture"
+        android:clickable="true"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done!"
+        android:id="@+id/done_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="433dp"
+        android:onClick="segueToCamera"
+        android:clickable="true"
+        />
+
+</RelativeLayout>
