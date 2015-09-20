@@ -88,14 +88,25 @@
         android:layout_toEndOf="@+id/done_button" />
 
     <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Upload Image"
+        android:id="@+id/camera_button"
+        android:layout_marginTop="410dp"
+        android:onClick="segueToPicture"
+        android:clickable="true"
+        android:background="#4ab06c"
+        android:layout_alignStart="@+id/editExp" />
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Register"
         android:id="@+id/done_button"
         android:onClick="segueToCamera"
         android:clickable="true"
-        android:layout_marginTop="410dp"
-        android:layout_centerHorizontal="true"
-        android:background="#4ab06c" />
+        android:background="#4ab06c"
+        android:layout_alignTop="@+id/camera_button"
+        android:layout_alignEnd="@+id/editCard" />
 
 </RelativeLayout>
